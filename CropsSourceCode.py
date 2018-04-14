@@ -44,7 +44,7 @@ def crops(temp, pH, soil, values, diffT = {}, diffP = {}, score = {}):
 
 def main():
     
-    loop = crops(33.4, 6.6, raw_input('Soil type: '), values)
+    loop = crops(int(raw_input('Temp: ')), int(raw_input('pH: )), raw_input('Soil type: '), values)
     print 'The best crops are:'
     for i in loop: print i[0] + ':', i[-1]
 
