@@ -41,12 +41,7 @@ def crops(temp, pH, soil, values, diffT = {}, diffP = {}, score = {}):
     score.reverse()
     return score
 
-
-def main():
-    
-    loop = crops(int(raw_input('Temp: ')), int(raw_input('pH: )), raw_input('Soil type: '), values)
-    print 'The best crops are:'
-    for i in loop: print i[0] + ':', i[-1]
-
-
-if __name__ == '__main__': main()
+   
+loop = crops(int(raw_input('Temp: ')), int(raw_input('pH: )), raw_input('Soil type: '), values)
+print 'The best crops are:'
+for i in loop: print i[0] + ':', i[-1]
